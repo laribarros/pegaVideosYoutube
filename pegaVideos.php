@@ -19,9 +19,7 @@ foreach($xml->entry as $e){
 	$cod = str_replace("http://www.youtube.com/watch?v=", "", $link);
 	$cod = str_replace("https://www.youtube.com/watch?v=", "", $link);
 	?>
-	<div class="video">
-		<iframe id="ytplayer" type="text/html" width="<?=$width?>" height="<?=$height?>" src="https://www.youtube.com/embed/<?=$cod?>?rel=0" frameborder="0" allowfullscreen></iframe>
-	</div>
+	<iframe id="ytplayer" type="text/html" width="<?=$width?>" height="<?=$height?>" src="https://www.youtube.com/embed/<?=$cod?>?rel=0" frameborder="0" allowfullscreen></iframe>
 <?
 	if($i==$qtd_videos)
 		break;
